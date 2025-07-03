@@ -1,0 +1,187 @@
+[
+    {
+        "userId": 1,
+        "username": "Emily",
+        "image": "https://dummyjson.com/icon/emilys/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+                "title": "Beach Sunset"
+            },
+            {
+                "id": 2,
+                "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+                "title": "Mountain View"
+            }
+        ]
+    },
+    {
+        "userId": 2,
+        "username": "Michael",
+        "image": "https://dummyjson.com/icon/michaelw/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+                "title": "Beach Sunset"
+            }
+        ]
+    },
+    {
+        "userId": 3,
+        "username": "Sophia",
+        "image": "https://dummyjson.com/icon/sophiab/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
+                "title": "City Lights"
+            },
+            {
+                "id": 2,
+                "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+                "title": "Forest Trail"
+            }
+        ]
+    },
+    {
+        "userId": 4,
+        "username": "James",
+        "image": "https://dummyjson.com/icon/jamesd/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+                "title": "Beach Sunset"
+            },
+            {
+                "id": 2,
+                "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+                "title": "Mountain View"
+            },
+            {
+                "id": 3,
+                "url": "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
+                "title": "City Lights"
+            },
+            {
+                "id": 4,
+                "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+                "title": "Forest Trail"
+            }
+        ]
+    },
+    {
+        "userId": 5,
+        "username": "Emma",
+        "image": "https://dummyjson.com/icon/emmaj/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+                "title": "Beach Sunset"
+            }
+        ]
+    },
+    {
+        "userId": 6,
+        "username": "Olivia",
+        "image": "https://dummyjson.com/icon/oliviaw/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+                "title": "Beach Sunset"
+            },
+            {
+                "id": 2,
+                "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+                "title": "Mountain View"
+            },
+            {
+                "id": 3,
+                "url": "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
+                "title": "City Lights"
+            },
+            {
+                "id": 4,
+                "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+                "title": "Forest Trail"
+            }
+        ]
+    },
+    {
+        "userId": 7,
+        "username": "Alexander",
+        "image": "https://dummyjson.com/icon/alexanderj/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+                "title": "Beach Sunset"
+            },
+            {
+                "id": 2,
+                "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+                "title": "Mountain View"
+            }
+        ]
+    },
+    {
+        "userId": 8,
+        "username": "Ava",
+        "image": "https://dummyjson.com/icon/avat/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+                "title": "Beach Sunset"
+            },
+            {
+                "id": 2,
+                "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+                "title": "Mountain View"
+            },
+            {
+                "id": 3,
+                "url": "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
+                "title": "City Lights"
+            },
+            {
+                "id": 4,
+                "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+                "title": "Forest Trail"
+            }
+        ]
+    },
+    {
+        "userId": 9,
+        "username": "Ethan",
+        "image": "https://dummyjson.com/icon/ethanm/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+                "title": "Beach Sunset"
+            }
+        ]
+    },
+    {
+        "userId": 10,
+        "username": "Isabella",
+        "image": "https://dummyjson.com/icon/isabellad/128",
+        "stories": [
+            {
+                "id": 1,
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+                "title": "Beach Sunset"
+            },
+            {
+                "id": 2,
+                "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+                "title": "Mountain View"
+            }
+        ]
+    }
+]
