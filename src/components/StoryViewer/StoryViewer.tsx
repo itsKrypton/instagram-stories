@@ -14,10 +14,6 @@ const StoryViewer: React.FC<StoryViewerProps> = ({ users, initialUserIdx, initia
     const [userIdx, setUserIdx] = useState(initialUserIdx);
     const [storyIdx, setStoryIdx] = useState(initialStoryIdx);
     const [imageLoaded, setImageLoaded] = useState(false);
-    const [paused, setPaused] = useState(false);
-    const [startTime, setStartTime] = useState<number | null>(null);
-    const [remaining, setRemaining] = useState(storyDuration * 1000);
-    const timerRef = React.useRef<number | null>(null);
 
     const user = users[userIdx];
     const story = user.stories[storyIdx];
@@ -26,19 +22,18 @@ const StoryViewer: React.FC<StoryViewerProps> = ({ users, initialUserIdx, initia
      * Auto increment of stories
      */
     useEffect(() => {
-        if (!imageLoaded || paused) {
-            if (timerRef.current) clearTimeout(timerRef.current);
+        if (!imageLoaded) {
             return;
         }
-        const now = Date.now();
-        setStartTime(now);
-        timerRef.current = window.setTimeout(() => {
+
+        const timer: number = setTimeout(() => {
             goNext();
-        }, remaining);
+        }, storyDuration * 1000);
+
         return () => {
-            if (timerRef.current) clearTimeout(timerRef.current);
+            clearTimeout(timer);
         };
-    }, [storyIdx, userIdx, imageLoaded, paused, remaining]);
+    }, [storyIdx, userIdx, imageLoaded]);
 
     /*
      * Returns styles for the progress bar depending on it's current 
@@ -49,11 +44,8 @@ const StoryViewer: React.FC<StoryViewerProps> = ({ users, initialUserIdx, initia
         if (idx < storyIdx) {
             className += ' finished';
         }
-        if (idx === storyIdx && imageLoaded && !paused) {
+        if (idx === storyIdx && imageLoaded) {
             className += ' active';
-        }
-        if (idx === storyIdx && paused) {
-            className += ' paused';
         }
         return className;
     }
@@ -92,35 +84,18 @@ const StoryViewer: React.FC<StoryViewerProps> = ({ users, initialUserIdx, initia
         }
     };
 
-    // Reset timing when story or user changes
-    useEffect(() => {
-        setImageLoaded(false);
-        setPaused(false);
-        setRemaining(storyDuration * 1000);
-        setStartTime(null);
-    }, [storyIdx, userIdx, storyDuration]);
-
     /*
      * Detects which side of the image was clicked
      */
     const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+        // Current viewport width
         const width = window.innerWidth;
+        // X cordinates of the click
         const x = e.clientX;
-        if (x < width / 3) {
+        if (x < width / 2) {
             goPrev();
-        } else if (x > (2 * width) / 3) {
-            goNext();
         } else {
-            // Center: toggle pause
-            setPaused((prev) => {
-                if (!prev) {
-                    // Pausing: calculate remaining time
-                    if (startTime) setRemaining((r) => r - (Date.now() - startTime));
-                } else {
-                    // Resuming: nothing to do, useEffect will handle
-                }
-                return !prev;
-            });
+            goNext();
         }
     };
 

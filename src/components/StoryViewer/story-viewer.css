@@ -153,10 +153,6 @@
   }
 }
 
-.story-viewer-progress-bar.paused {
-  animation-play-state: paused !important;
-}
-
 @keyframes progressBar {
   from {
     width: 0%;
