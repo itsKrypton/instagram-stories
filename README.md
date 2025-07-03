@@ -6,7 +6,7 @@ A simplified mobile-only Instagram-style story viewer built with **React**, **Ty
 
 ## 🌐 Deployment
 
-👉 **Live Demo**: [Link](https://www.google.com/)
+👉 **Live Demo**: [Link](https://instagram-stories-zeta.vercel.app/)
 
 ---
 
