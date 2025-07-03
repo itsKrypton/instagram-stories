@@ -1,0 +1,51 @@
+.story-list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  padding: 16px 12px;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  scrollbar-width: thin;
+}
+
+.story-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 72px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.avatar-ring {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  padding: 3px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 6px;
+}
+
+.avatar-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.avatar-username {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 2px;
+  text-align: center;
+  max-width: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
